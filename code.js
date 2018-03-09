@@ -8,3 +8,8 @@ function Ship(draft,crew) {
      const finalDraft = this.draft - weight;
      return (finalDraft > 20 ? true : false);
    };
+
+   function abbrevName(name) {
+    const answer = name.split(' ').map(n => n.substring(0, 1)).join('.').toUpperCase();
+    return answer;
+  };
